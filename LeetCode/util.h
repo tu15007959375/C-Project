@@ -3,11 +3,19 @@
 #include<iostream>
 using namespace std;
 
+//链表结构体
 typedef struct ListNode {
 	int val;
 	ListNode *next;
 }ListNode;
 
+typedef struct TreeNode {
+	int val;
+	TreeNode *left;
+	TreeNode *right;
+}TreeNode;
+
+//链表创建，没有头节点，使用数组创建
 ListNode* creatLinkList(vector<int> list)
 {
 	ListNode *head = new ListNode;
@@ -25,6 +33,8 @@ ListNode* creatLinkList(vector<int> list)
 	p->next = NULL;
 	return head;
 }
+
+//链表输出
 void printLinkList(ListNode *head)
 {
 	ListNode *p = head;
@@ -33,3 +43,5 @@ void printLinkList(ListNode *head)
 		p = p->next;
 	}
 }
+
+
