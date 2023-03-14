@@ -1,4 +1,5 @@
 #include<vector>
+#include <stack>
 #include<string> 
 #include<iostream>
 #include <algorithm>
