@@ -1,7 +1,4 @@
-#include<iostream>
-#include <vector>
-#include <unordered_map>
-using namespace std;
+#include"util.h"
 
 
 int findRepeatNumber(vector<int>& nums) {

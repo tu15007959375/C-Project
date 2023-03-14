@@ -1,7 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<string> 
-using namespace std;
+#include"util.h"
 
 string replaceSpace(string s) {
 	string s1 = "";

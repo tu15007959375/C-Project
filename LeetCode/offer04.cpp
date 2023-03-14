@@ -1,6 +1,4 @@
-#include<iostream>
-#include <vector>
-using namespace std;
+#include"util.h"
 bool findNumberIn2DArray(vector<vector<int>>& matrix, int target) 
 {
 	int i=matrix.size()-1,j=0;

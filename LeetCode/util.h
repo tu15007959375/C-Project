@@ -3,6 +3,7 @@
 #include<string> 
 #include<iostream>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 //链表结构体
