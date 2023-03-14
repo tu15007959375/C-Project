@@ -1,6 +1,7 @@
 #include<vector>
 #include<string> 
 #include<iostream>
+#include <algorithm>
 using namespace std;
 
 //链表结构体
@@ -9,6 +10,7 @@ typedef struct ListNode {
 	ListNode *next;
 }ListNode;
 
+//树的结构体
 typedef struct TreeNode {
 	int val;
 	TreeNode *left;
