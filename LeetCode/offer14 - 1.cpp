@@ -6,12 +6,12 @@ int cuttingRope(int n) {
 	int x = n/3;
 	int y = n%3;
 	int sum=1;
-	for(int i=0;i<(x-y);i++){
-		sum *= x;
-	}
-	for(int i=0;i<y;i++){
-		sum *= (x+1);
-	}
+	if(y == 0)
+		return pow(3,x);
+	else if(y == 1)
+		return 4*pow(3,x-1);
+	else
+		return 2*pow(3,x);
 	return sum;
 }
 

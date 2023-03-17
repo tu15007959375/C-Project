@@ -4,6 +4,7 @@
 #include<iostream>
 #include <algorithm>
 #include <unordered_map>
+#include <cmath>
 using namespace std;
 
 //链表结构体
