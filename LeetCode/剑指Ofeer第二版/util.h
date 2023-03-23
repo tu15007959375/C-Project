@@ -7,6 +7,7 @@
 #include <cmath>
 #include <stdlib.h>
 #include <numeric> 
+#include <sstream>
 using namespace std;
 
 //链表结构体
