@@ -52,4 +52,26 @@ void printLinkList(ListNode *head)
 	}
 }
 
+void Create_TreeNode(TreeNode *&t,int x){  //在指针t处生成一个新的节点，内容为x
+	t=new TreeNode;
+	t->val=x;
+	t->left=NULL;
+	t->right=NULL;
+}
+void createTree(TreeNode *&root,vector<int> val,int i)
+{
+	Create_TreeNode(root,val[i]);
+	if((i*2)<val.size())
+		createTree(root->left,val,i*2);
+	if((i*2+1)<val.size())
+		createTree(root->right,val,i*2+1);
+}
+void printTree(TreeNode *root)
+{
+	if(!root)
+		return;
+	cout<<root->val<<"\t";
+	printTree(root->left);
+	printTree((root->right));
+}
 
