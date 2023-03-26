@@ -39,6 +39,8 @@
 bool isSameTree(TreeNode *A, TreeNode *B) {
 	if (!A && !B)
 		return true;
+	if(A&&!B)
+		return true;
 	return A && B && A->val == B->val && (isSameTree(A->left, B->left)) && (isSameTree(A->right, B->right));
 }
 bool isSubStructure(TreeNode *A, TreeNode *B)
