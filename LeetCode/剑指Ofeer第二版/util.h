@@ -62,9 +62,9 @@ void Create_TreeNode(TreeNode *&t,int x){  //在指针t处生成一个新的节�
 void createTree(TreeNode *&root,vector<int> val,int i)
 {
 	Create_TreeNode(root,val[i]);
-	if((i*2)<val.size()&&val[2*i]!=-1)
+	if((long long unsigned)(i*2)<val.size()&&val[2*i]!=-1)
 		createTree(root->left,val,i*2);
-	if((i*2+1)<val.size()&&val[2*i+1]!=-1)
+	if((long long unsigned)(i*2+1)<val.size()&&val[2*i+1]!=-1)
 		createTree(root->right,val,i*2+1);
 }
 void printTree(TreeNode *root)
