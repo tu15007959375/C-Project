@@ -19,13 +19,32 @@ public:
 		right = _right;
 	}
 };
-void preorder(Node* root)
+void preorder(vector<Node*> &treelist,Node* root)
 {
-	
+	if(root)
+	{
+		preorder(treelist,root->left);
+		treelist.push_back(root);
+		preorder(treelist,root->right);
+	}		
 }
 Node* treeToDoublyList(Node* root) {
+	if(!root)
+		return NULL;
 	vector<Node*> treelist;
-	
+	Node *head = new Node;
+	preorder(treelist,root);
+	if(treelist.size()==0)
+		return head;
+	head=treelist[0];
+	for(int i=0;i<treelist.size()-1;i++)
+	{
+		treelist[i]->right=treelist[i+1];
+		treelist[i+1]->left=treelist[i];
+	}
+	treelist[0]->left=treelist.back();
+	treelist.back()->right=treelist[0];
+	return head;
 }
 
 int main() {
