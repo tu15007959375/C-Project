@@ -22,6 +22,8 @@ typedef struct TreeNode {
 	int val;
 	TreeNode *left;
 	TreeNode *right;
+	TreeNode() : val(0), left(NULL), right(NULL) {}
+	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 }TreeNode;
 
 //链表创建，没有头节点，使用数组创建
@@ -54,10 +56,7 @@ void printLinkList(ListNode *head)
 }
 
 void Create_TreeNode(TreeNode *&t,int x){  //在指针t处生成一个新的节点，内容为x
-	t=new TreeNode;
-	t->val=x;
-	t->left=NULL;
-	t->right=NULL;
+	t=new TreeNode(x);
 }
 void createTree(TreeNode *&root,vector<int> val,int i)
 {
