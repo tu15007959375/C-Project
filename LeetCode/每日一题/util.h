@@ -12,6 +12,7 @@
 #include <set>
 #include <map>
 #include <bitset>
+#include <string.h>
 using namespace std;
 
 //链表结构体
