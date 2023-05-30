@@ -13,6 +13,7 @@
 #include <map>
 #include <bitset>
 #include <string.h>
+#include <unordered_set>
 using namespace std;
 
 //链表结构体
