@@ -14,6 +14,7 @@
 #include <bitset>
 #include <string.h>
 #include <unordered_set>
+#include <ctype.h>
 using namespace std;
 
 //链表结构体
